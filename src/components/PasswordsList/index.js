@@ -1,7 +1,7 @@
 const PasswordsList = props => {
-  const {passwordsEntered, showPasswords, toDelItem, count} = props
+  const {passwordsEntered, showPasswords, toDelItem} = props
   const {id} = passwordsEntered
-  console.log(count)
+  
 
   const onDelete = () => {
     toDelItem(id)
@@ -11,7 +11,7 @@ const PasswordsList = props => {
     <li>
       <div className="list-cont">
         <div>
-          <h1> {passwordsEntered.website[0]}</h1>
+          <h1> {passwordsEntered.website[0].toUpperCase()}</h1>
         </div>
         <div>
           <p> {passwordsEntered.website}</p>
@@ -19,7 +19,7 @@ const PasswordsList = props => {
           {showPasswords ? (
             <p> {passwordsEntered.password}</p>
           ) : (
-            <img
+            <img className="stars"
               src="https://assets.ccbp.in/frontend/react-js/password-manager-stars-img.png"
               alt="stars"
             />

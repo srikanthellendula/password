@@ -99,6 +99,8 @@ class Passwords extends Component {
         <div className="to-create">
           <div className="add-new-password">
             <h1> Add New Password </h1>
+
+
             <form className="form" onSubmit={this.onSubmitClicked}>
               <div className="icon-cont">
                 <img
@@ -146,6 +148,8 @@ class Passwords extends Component {
                 </button>
               </div>
             </form>
+            
+
           </div>
           <div>
             <img

@@ -152,3 +152,6 @@
   -ms-flex-align: center;
   align-items: center
 }
+.stars{
+  height: 20px;
+}
